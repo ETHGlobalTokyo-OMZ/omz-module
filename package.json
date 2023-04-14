@@ -1,0 +1,20 @@
+{
+  "name": "omz-module",
+  "version": "1.0.3",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "test": "NODE_ENV=test mocha --require ts-node/register test/**/*.ts --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ETHGlobalTokyo-OMZ/omz-module.git"
+  },
+  "main": "dist/index.js",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ETHGlobalTokyo-OMZ/omz-module/issues"
+  },
+  "homepage": "https://github.com/ETHGlobalTokyo-OMZ/omz-module#readme"
+}
