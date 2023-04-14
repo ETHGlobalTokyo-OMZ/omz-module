@@ -1,6 +1,6 @@
 import { ChainIDEnums, ContractType } from './enums';
 
-interface IContract {
+export interface IContract {
     type: ContractType;
     tokenName: string | null;
     address: string;
@@ -16,21 +16,15 @@ const contracts: Map<ChainIDEnums, IContract[]> = new Map([
             decimal: 18
         },
         {
-            type: ContractType.USDC,
-            tokenName: "USDC",
-            address: "0xeBB42f3d9aDB45d6EF586b06CaE7B15563F3389B",
-            decimal: 18
-        },
-        {
             type: ContractType.BOB,
             tokenName: "BOB",
-            address: "0xD75c9Ba92383EBE819fF443E7857f23555Df500f",
+            address: "0x8efb12f288CB3e4Eb9300aDd97D1456980108F4f",
             decimal: 18
         },
         {
             type: ContractType.ORDER_FACTORY,
             tokenName: null,
-            address: "0x6262BB470AEd4CC88105392845E97d0FB1feea5e",
+            address: "0xb2B7e5C289679c8ea2D4BEC87c94c0f80941C603",
             decimal: null
         }
     ]],
@@ -44,13 +38,13 @@ const contracts: Map<ChainIDEnums, IContract[]> = new Map([
         {
             type: ContractType.USDC,
             tokenName: "USDC",
-            address: "0x",
+            address: "0x88fBa6D6C53FBDC3D8b6C11bC5cB5DC8f853Cc6E",
             decimal: 18
         },
         {
             type: ContractType.SELLER_VAULT,
             tokenName: null,
-            address: "0x",
+            address: "0x3EFD20673d47507C382Fd1004CA729FCD04C40c7",
             decimal: null
         }
     ]]
