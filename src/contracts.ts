@@ -18,25 +18,25 @@ const contracts: Map<ChainIDEnums, IContract[]> = new Map([
         {
             type: ContractType.USDC,
             tokenName: "USDC",
-            address: "0x1B487e41a3D806378eFdBC6E14ca96E31Ee2D90c",
-            decimal: 18
+            address: "0xE1F26CE19D9B2eEfBB533fa991fE299cFC5EA915",
+            decimal: 6
         },
         {
             type: ContractType.BOB,
             tokenName: "BOB",
-            address: "0xe14B7E2a2Ce7CDe22e36f4518F9747B1e374e3a1",
+            address: "0x60906a86E4768AfA612ed8E03752F9D6ae53F3aC",
             decimal: 18
         },
         {
             type: ContractType.SELLER_VAULT,
             tokenName: null,
-            address: "0x46DE81eA95C2540cC38CBA4e45cf749Ac3a80a5f",
+            address: "0xB870C41eBA2711Ab3E1e47d53F817635a3eD5D23",
             decimal: null
         },
         {
             type: ContractType.ORDER_FACTORY,
             tokenName: null,
-            address: "0x24F72B93748EB1752dEb9b01A9944aC3238f8C5C",
+            address: "0x0eBE433228B2af01b3802d53c6065c141224603f",
             decimal: null
         }
     ]],
