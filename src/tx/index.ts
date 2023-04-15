@@ -25,6 +25,42 @@ export class TxManager {
         return listHash;
     }
 
+    public async getResolveUserListHashData(provider: string, chainID: ChainIDEnums, userAddress: string, order: IOrder): Promise<string> {
+        const web3 = new Web3(new Web3.providers.HttpProvider(provider));
+
+        const sellerVault = getContractByContractType(chainID, ContractType.SELLER_VAULT);
+        const sellerVaultContract = new web3.eth.Contract(sellerABI as AbiItem[], sellerVault.address);
+
+        const userNonce = await sellerVaultContract.methods.user_nonce(userAddress).call();
+
+        const listHash = await sellerVaultContract.methods.get_order_hash(order, userNonce, 0).call();
+        return listHash;
+    }
+
+    public async deposit(): Promise<string> {
+        return "0xd0e30db0";
+    }
+
+    public async makeResolveSell(
+        provider: string,
+        chainID: ChainIDEnums,
+        sig: ISig,
+        userAddress: string,
+        buyAddress: string,
+    ): Promise<string> {
+        const web3 = new Web3(new Web3.providers.HttpProvider(provider));
+        const sellerVault = getContractByContractType(chainID, ContractType.SELLER_VAULT);
+        const sellerVaultContract = new web3.eth.Contract(sellerABI as AbiItem[], sellerVault.address);
+        let userNonce = await sellerVaultContract.methods.user_nonce(userAddress).call();
+        userNonce = userNonce - 1;
+        let callBytes = await sellerVaultContract.methods.resolve_sell(
+            userNonce,
+            sig,
+            buyAddress
+        ).encodeABI();
+        return callBytes;
+    }
+
     public makeListSell(
         provider: string,
         chainID: ChainIDEnums,
