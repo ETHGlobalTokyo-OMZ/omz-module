@@ -1,8 +1,8 @@
 
 export enum ContractType {
     NATIVE_COIN,
+    DAI,
     USDC,
-    BOB,
     SELLER_VAULT,
     ORDER_FACTORY,
 }

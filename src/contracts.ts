@@ -16,27 +16,27 @@ const contracts: Map<ChainIDEnums, IContract[]> = new Map([
             decimal: 18
         },
         {
-            type: ContractType.USDC,
-            tokenName: "USDC",
-            address: "0xE1F26CE19D9B2eEfBB533fa991fE299cFC5EA915",
-            decimal: 6
+            type: ContractType.DAI,
+            tokenName: "DAI",
+            address: "0x714c0cF64697d37DA06b54980bc9a38A3038b5b4",
+            decimal: 18
         },
         {
-            type: ContractType.BOB,
-            tokenName: "BOB",
-            address: "0x60906a86E4768AfA612ed8E03752F9D6ae53F3aC",
-            decimal: 18
+            type: ContractType.USDC,
+            tokenName: "USDC",
+            address: "0x3B1732F952772f4A94A4bb415DcAeeB78b5d3fAF",
+            decimal: 6
         },
         {
             type: ContractType.SELLER_VAULT,
             tokenName: null,
-            address: "0xB870C41eBA2711Ab3E1e47d53F817635a3eD5D23",
+            address: "0xD5e2A4E44eb72a863016610B831fEb25e4cd0FfD",
             decimal: null
         },
         {
             type: ContractType.ORDER_FACTORY,
             tokenName: null,
-            address: "0x0eBE433228B2af01b3802d53c6065c141224603f",
+            address: "0xD883509B408031b7A4632ce549535718E12dC1c5",
             decimal: null
         }
     ]],
@@ -48,15 +48,27 @@ const contracts: Map<ChainIDEnums, IContract[]> = new Map([
             decimal: 18
         },
         {
+            type: ContractType.DAI,
+            tokenName: "DAI",
+            address: "0x35e6B9DEd47E8187c98c54c590e8B3DAD7862769",
+            decimal: 18
+        },
+        {
             type: ContractType.USDC,
             tokenName: "USDC",
-            address: "0x88fBa6D6C53FBDC3D8b6C11bC5cB5DC8f853Cc6E",
-            decimal: 18
+            address: "0xD883509B408031b7A4632ce549535718E12dC1c5",
+            decimal: 6
         },
         {
             type: ContractType.SELLER_VAULT,
             tokenName: null,
-            address: "0x3EFD20673d47507C382Fd1004CA729FCD04C40c7",
+            address: "0x870E499c50F38E902F93EF1e9c483BdfAe2286FB",
+            decimal: null
+        },
+        {
+            type: ContractType.ORDER_FACTORY,
+            tokenName: null,
+            address: "0x0aC11775dF929F6FE90AE4AC1E9E8E5Ec7294f28",
             decimal: null
         }
     ]]
