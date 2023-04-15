@@ -18,32 +18,32 @@ const contracts: Map<ChainIDEnums, IContract[]> = new Map([
         {
             type: ContractType.DAI,
             tokenName: "DAI",
-            address: "0x714c0cF64697d37DA06b54980bc9a38A3038b5b4",
+            address: "0xE59062a02D944D3cEC8B87169d770A38b9f07ab0",
             decimal: 18
         },
         {
             type: ContractType.USDC,
             tokenName: "USDC",
-            address: "0x3B1732F952772f4A94A4bb415DcAeeB78b5d3fAF",
+            address: "0x1aC0aeFFfBe0D4483Da39f7a19d94b81b8645A42",
             decimal: 6
         },
         {
             type: ContractType.SELLER_VAULT,
             tokenName: null,
-            address: "0xD5e2A4E44eb72a863016610B831fEb25e4cd0FfD",
+            address: "0x2476577EA63100172dD6AC68BcE9FaF74Ad973dE",
             decimal: null
         },
         {
             type: ContractType.ORDER_FACTORY,
             tokenName: null,
-            address: "0xD883509B408031b7A4632ce549535718E12dC1c5",
+            address: "0x61Ed0C0Ba666085943fafCDBa54A8D280c4BC509",
             decimal: null
         }
     ]],
     [ChainIDEnums.GOERLI, [
         {
             type: ContractType.NATIVE_COIN,
-            tokenName: "ETHER",
+            tokenName: "ETH",
             address: "0x0000000000000000000000000000000000000000",
             decimal: 18
         },
@@ -56,19 +56,19 @@ const contracts: Map<ChainIDEnums, IContract[]> = new Map([
         {
             type: ContractType.USDC,
             tokenName: "USDC",
-            address: "0xD883509B408031b7A4632ce549535718E12dC1c5",
+            address: "0xa104180aF76c304DD2E2EaE152D93507b05e56E1",
             decimal: 6
         },
         {
             type: ContractType.SELLER_VAULT,
             tokenName: null,
-            address: "0x870E499c50F38E902F93EF1e9c483BdfAe2286FB",
+            address: "0x84D2890F93170CEA8dDF19765605EcC4DDF0c0B9",
             decimal: null
         },
         {
             type: ContractType.ORDER_FACTORY,
             tokenName: null,
-            address: "0x0aC11775dF929F6FE90AE4AC1E9E8E5Ec7294f28",
+            address: "0x18afA8c1A0e33C2c59982cAF745D4BC6c23D010E",
             decimal: null
         }
     ]]
